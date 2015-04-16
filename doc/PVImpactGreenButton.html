@@ -1,0 +1,1101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Module: PVImpactGreenButton
+  
+    &mdash; Documentation by YARD 0.8.7.6
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!PVImpactGreenButton.html";
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index (P)</a> &raquo;
+    
+    
+    <span class="title">PVImpactGreenButton</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Module: PVImpactGreenButton
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+  
+    
+      <dt class="r1">Extended by:</dt>
+      <dd class="r1"><span class='object_link'><a href="PVImpactGreenButton/Validation.html" title="PVImpactGreenButton::Validation (module)">Validation</a></span></dd>
+      
+    
+  
+    
+      <dt class="r2">Includes:</dt>
+      <dd class="r2">Configurations</dd>
+      
+    
+  
+  
+  
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">lib/pvimpact/greenbutton/errors.rb<span class="defines">,<br />
+  lib/pvimpact-greenbutton.rb,<br /> lib/pvimpact/greenbutton/parser.rb,<br /> lib/pvimpact/greenbutton/version.rb,<br /> lib/pvimpact/greenbutton/validation.rb,<br /> lib/pvimpact/greenbutton/aggregator.rb,<br /> lib/pvimpact/greenbutton/model/usage_point.rb,<br /> lib/pvimpact/greenbutton/model/meter_reading.rb,<br /> lib/pvimpact/greenbutton/model/interval_block.rb,<br /> lib/pvimpact/greenbutton/model/aggregation_type.rb,<br /> lib/pvimpact/greenbutton/model/interval_reading.rb,<br /> lib/pvimpact/greenbutton/model/meter_reading_type.rb,<br /> lib/pvimpact/greenbutton/model/local_time_parameters.rb,<br /> lib/pvimpact/greenbutton/model/electricity_power_usage_summary.rb</span>
+</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Copyright © 2015, TopCoder Inc., All Rights Reserved.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Author:</p>
+<ul class="author">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>albertwang</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Version:</p>
+<ul class="version">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><h2>Defined Under Namespace</h2>
+<p class="children">
+  
+    
+      <strong class="modules">Modules:</strong> <span class='object_link'><a href="PVImpactGreenButton/Aggregator.html" title="PVImpactGreenButton::Aggregator (module)">Aggregator</a></span>, <span class='object_link'><a href="PVImpactGreenButton/Validation.html" title="PVImpactGreenButton::Validation (module)">Validation</a></span>
+    
+  
+    
+      <strong class="classes">Classes:</strong> <span class='object_link'><a href="PVImpactGreenButton/AggregationError.html" title="PVImpactGreenButton::AggregationError (class)">AggregationError</a></span>, <span class='object_link'><a href="PVImpactGreenButton/AggregationType.html" title="PVImpactGreenButton::AggregationType (class)">AggregationType</a></span>, <span class='object_link'><a href="PVImpactGreenButton/ElectricityPowerUsageSummary.html" title="PVImpactGreenButton::ElectricityPowerUsageSummary (class)">ElectricityPowerUsageSummary</a></span>, <span class='object_link'><a href="PVImpactGreenButton/GreenButtonError.html" title="PVImpactGreenButton::GreenButtonError (class)">GreenButtonError</a></span>, <span class='object_link'><a href="PVImpactGreenButton/IntervalBlock.html" title="PVImpactGreenButton::IntervalBlock (class)">IntervalBlock</a></span>, <span class='object_link'><a href="PVImpactGreenButton/IntervalReading.html" title="PVImpactGreenButton::IntervalReading (class)">IntervalReading</a></span>, <span class='object_link'><a href="PVImpactGreenButton/LocalTimeParameters.html" title="PVImpactGreenButton::LocalTimeParameters (class)">LocalTimeParameters</a></span>, <span class='object_link'><a href="PVImpactGreenButton/MeterReading.html" title="PVImpactGreenButton::MeterReading (class)">MeterReading</a></span>, <span class='object_link'><a href="PVImpactGreenButton/MeterReadingType.html" title="PVImpactGreenButton::MeterReadingType (class)">MeterReadingType</a></span>, <span class='object_link'><a href="PVImpactGreenButton/Parser.html" title="PVImpactGreenButton::Parser (class)">Parser</a></span>, <span class='object_link'><a href="PVImpactGreenButton/ParsingError.html" title="PVImpactGreenButton::ParsingError (class)">ParsingError</a></span>, <span class='object_link'><a href="PVImpactGreenButton/PersistenceError.html" title="PVImpactGreenButton::PersistenceError (class)">PersistenceError</a></span>, <span class='object_link'><a href="PVImpactGreenButton/UnsupportedServiceKindError.html" title="PVImpactGreenButton::UnsupportedServiceKindError (class)">UnsupportedServiceKindError</a></span>, <span class='object_link'><a href="PVImpactGreenButton/UsagePoint.html" title="PVImpactGreenButton::UsagePoint (class)">UsagePoint</a></span>
+    
+  
+</p>
+
+  <h2>Constant Summary</h2>
+  
+    <dl class="constants">
+      
+        <dt id="LOGGER-constant" class="">LOGGER =
+          <div class="docstring">
+  <div class="discussion">
+    
+<p>This is the shared logger.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+        </dt>
+        <dd><pre class="code"><span class='const'>Logger</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>greenbutton.log</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span></pre></dd>
+      
+        <dt id="VERSION-constant" class="">VERSION =
+          <div class="docstring">
+  <div class="discussion">
+    
+<p>This specifies the version of this gem</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+        </dt>
+        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>0.0.1</span><span class='tstring_end'>&#39;</span></span></pre></dd>
+      
+    </dl>
+  
+
+
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#create_db-class_method" title="create_db (class method)">+ (Object) <strong>create_db</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Create database tables for this gem.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#download_data-class_method" title="download_data (class method)">+ (Object) <strong>download_data</strong>(access_token, resource_uri, interval_start_time = nil, interval_end_time = nil, aggregation_type = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Download customer GreenButton data from GreenButton API, apply aggregation
+if needed and then save the data into database persistence.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#retrieve_data-class_method" title="retrieve_data (class method)">+ (Object) <strong>retrieve_data</strong>(subscription_id, interval_start_time = nil, interval_end_time = nil, aggregation_type = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Retrieve customer GreenButton data from database persistence, and apply
+aggregation if needed.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#setup_db-class_method" title="setup_db (class method)">+ (Object) <strong>setup_db</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Setup database for this gem.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="PVImpactGreenButton/Validation.html" title="PVImpactGreenButton::Validation (module)">Validation</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="PVImpactGreenButton/Validation.html#validate_aggregation_type-instance_method" title="PVImpactGreenButton::Validation#validate_aggregation_type (method)">validate_aggregation_type</a></span>, <span class='object_link'><a href="PVImpactGreenButton/Validation.html#validate_required-instance_method" title="PVImpactGreenButton::Validation#validate_required (method)">validate_required</a></span>, <span class='object_link'><a href="PVImpactGreenButton/Validation.html#validate_string-instance_method" title="PVImpactGreenButton::Validation#validate_string (method)">validate_string</a></span>, <span class='object_link'><a href="PVImpactGreenButton/Validation.html#validate_time-instance_method" title="PVImpactGreenButton::Validation#validate_time (method)">validate_time</a></span>, <span class='object_link'><a href="PVImpactGreenButton/Validation.html#validate_time_range-instance_method" title="PVImpactGreenButton::Validation#validate_time_range (method)">validate_time_range</a></span></p>
+
+  
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="create_db-class_method">
+  
+    + (<tt>Object</tt>) <strong>create_db</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Create database tables for this gem. NOTE that this method will wipe and
+re-create the database tables.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        
+        <div class='inline'>
+<p>PVImpactGreenButton::PersistenceError if failed to setup database</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+59
+60
+61
+62</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/pvimpact-greenbutton.rb', line 59</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_create_db'>create_db</span>
+  <span class='id identifier rubyid_setup_db'>setup_db</span>
+  <span class='const'>DataMapper</span><span class='period'>.</span><span class='id identifier rubyid_auto_migrate!'>auto_migrate!</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="download_data-class_method">
+  
+    + (<tt>Object</tt>) <strong>download_data</strong>(access_token, resource_uri, interval_start_time = nil, interval_end_time = nil, aggregation_type = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Download customer GreenButton data from GreenButton API, apply aggregation
+if needed and then save the data into database persistence.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>access_token</span>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the OAuth2 access token String used to access the GreenButton API</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>resource_uri</span>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the URI String of the resource to download</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>interval_start_time</span>
+      
+      
+        <span class='type'></span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the interval start Time, optional</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>interval_end_time</span>
+      
+      
+        <span class='type'></span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the interval end Time, optional</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>aggregation_type</span>
+      
+      
+        <span class='type'></span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the AggregationType, optional</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        
+        <div class='inline'>
+<p>the downloaded UsagePoint data</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        
+        <div class='inline'>
+<p>ArgumentError if access_token/resource_uri is nil or blank string or does
+not respond to to_s, or interval_start_time/interval_end_time is not Time,
+or interval_start_time is later than interval_end_time, or aggregation_type
+is not AggregationType</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        
+        <div class='inline'>
+<p>PVImpactGreenButton::UnsupportedServiceKindError if any of the UsagePoint
+is for unsupported service kind (currently only 0 - electricity is
+supported).</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        
+        <div class='inline'>
+<p>PVImpactGreenButton::ParsingError if failed to parse the GreenButton data</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        
+        <div class='inline'>
+<p>PVImpactGreenButton::AggregationError if failed to aggregate the
+GreenButton data</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        
+        <div class='inline'>
+<p>PVImpactGreenButton::PersistenceError if failed to save GreenButton data
+into persistence</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/pvimpact-greenbutton.rb', line 83</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_download_data'>download_data</span><span class='lparen'>(</span><span class='id identifier rubyid_access_token'>access_token</span><span class='comma'>,</span> <span class='id identifier rubyid_resource_uri'>resource_uri</span><span class='comma'>,</span> <span class='id identifier rubyid_interval_start_time'>interval_start_time</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_interval_end_time'>interval_end_time</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_aggregation_type'>aggregation_type</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_validate_string'>validate_string</span><span class='lparen'>(</span><span class='id identifier rubyid_access_token'>access_token</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>access_token</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_validate_string'>validate_string</span><span class='lparen'>(</span><span class='id identifier rubyid_resource_uri'>resource_uri</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>resource_uri</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_validate_time'>validate_time</span><span class='lparen'>(</span><span class='id identifier rubyid_interval_start_time'>interval_start_time</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>interval_start_time</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='kw'>false</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_validate_time'>validate_time</span><span class='lparen'>(</span><span class='id identifier rubyid_interval_end_time'>interval_end_time</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>interval_end_time</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='kw'>false</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_validate_time_range'>validate_time_range</span><span class='lparen'>(</span><span class='id identifier rubyid_interval_start_time'>interval_start_time</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>interval_start_time</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_interval_end_time'>interval_end_time</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>interval_end_time</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_interval_start_time'>interval_start_time</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_interval_end_time'>interval_end_time</span>
+  <span class='id identifier rubyid_validate_aggregation_type'>validate_aggregation_type</span><span class='lparen'>(</span><span class='id identifier rubyid_aggregation_type'>aggregation_type</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>aggregation_type</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_aggregation_type'>aggregation_type</span>
+
+  <span class='kw'>begin</span>
+    <span class='const'>LOGGER</span><span class='period'>.</span><span class='id identifier rubyid_info'>info</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Send request to URL </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_resource_uri'>resource_uri</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='comment'># Fetch data from resource URI
+</span>    <span class='id identifier rubyid_conn'>conn</span> <span class='op'>=</span> <span class='const'>Faraday</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='symbol'>:url</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_resource_uri'>resource_uri</span><span class='comma'>,</span> <span class='symbol'>:headers</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Authorization</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Bearer </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_token'>access_token</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rbrace'>}</span><span class='rparen'>)</span>
+
+    <span class='comment'># Apply date filters only if the resource has been downloaded before, discussions:
+</span>    <span class='comment'># http://apps.topcoder.com/forums/?module=Thread&amp;threadID=850470&amp;start=0
+</span>    <span class='kw'>if</span> <span class='const'>UsagePoint</span><span class='period'>.</span><span class='id identifier rubyid_count'>count</span><span class='lparen'>(</span><span class='symbol'>:subscription_id</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_resource_uri'>resource_uri</span><span class='rparen'>)</span> <span class='op'>&gt;</span> <span class='int'>0</span>
+      <span class='id identifier rubyid_conn'>conn</span><span class='period'>.</span><span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>published-min</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_interval_start_time'>interval_start_time</span><span class='period'>.</span><span class='id identifier rubyid_utc'>utc</span><span class='period'>.</span><span class='id identifier rubyid_iso8601'>iso8601</span> <span class='kw'>if</span> <span class='id identifier rubyid_interval_start_time'>interval_start_time</span>
+      <span class='id identifier rubyid_conn'>conn</span><span class='period'>.</span><span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>published-max</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_interval_end_time'>interval_end_time</span><span class='period'>.</span><span class='id identifier rubyid_utc'>utc</span><span class='period'>.</span><span class='id identifier rubyid_iso8601'>iso8601</span> <span class='kw'>if</span> <span class='id identifier rubyid_interval_end_time'>interval_end_time</span>
+      <span class='const'>LOGGER</span><span class='period'>.</span><span class='id identifier rubyid_info'>info</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Using published-min </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_conn'>conn</span><span class='period'>.</span><span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>published-min</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+      <span class='const'>LOGGER</span><span class='period'>.</span><span class='id identifier rubyid_info'>info</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Using published-max </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_conn'>conn</span><span class='period'>.</span><span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>published-max</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='kw'>end</span>
+
+    <span class='id identifier rubyid_response'>response</span> <span class='op'>=</span> <span class='id identifier rubyid_conn'>conn</span><span class='period'>.</span><span class='id identifier rubyid_get'>get</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='const'>PVImpactGreenButton</span><span class='op'>::</span><span class='const'>GreenButtonError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GreenButton API responded with error code </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_response'>response</span><span class='period'>.</span><span class='id identifier rubyid_status'>status</span><span class='embexpr_end'>}</span><span class='tstring_content'>.</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_response'>response</span><span class='period'>.</span><span class='id identifier rubyid_status'>status</span> <span class='op'>==</span> <span class='int'>200</span>
+
+    <span class='comment'># Create temporary file
+</span>    <span class='id identifier rubyid_tempfile'>tempfile</span> <span class='op'>=</span> <span class='const'>Tempfile</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>download_data</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+    <span class='const'>LOGGER</span><span class='period'>.</span><span class='id identifier rubyid_info'>info</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Received GreenButton response </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_response'>response</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='comment'># Write response to temp file
+</span>    <span class='id identifier rubyid_tempfile'>tempfile</span><span class='period'>.</span><span class='id identifier rubyid_write'>write</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_tempfile'>tempfile</span><span class='period'>.</span><span class='id identifier rubyid_close'>close</span>
+  <span class='kw'>rescue</span> <span class='const'>PVImpactGreenButton</span><span class='op'>::</span><span class='const'>GreenButtonError</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_e'>e</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='id identifier rubyid_e'>e</span>
+  <span class='kw'>rescue</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_e'>e</span>
+    <span class='const'>LOGGER</span><span class='period'>.</span><span class='id identifier rubyid_fatal'>fatal</span><span class='lparen'>(</span><span class='id identifier rubyid_e'>e</span><span class='period'>.</span><span class='id identifier rubyid_backtrace'>backtrace</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='const'>PVImpactGreenButton</span><span class='op'>::</span><span class='const'>GreenButtonError</span><span class='comma'>,</span> <span class='id identifier rubyid_e'>e</span><span class='period'>.</span><span class='id identifier rubyid_message'>message</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_usage_points'>usage_points</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='comment'># Begin transaction
+</span>  <span class='const'>UsagePoint</span><span class='period'>.</span><span class='id identifier rubyid_transaction'>transaction</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_txn'>txn</span><span class='op'>|</span>
+    <span class='kw'>begin</span>
+      <span class='comment'># Parse response
+</span>      <span class='id identifier rubyid_parser'>parser</span> <span class='op'>=</span> <span class='const'>Parser</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='rparen'>)</span>
+      <span class='id identifier rubyid_parser'>parser</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='id identifier rubyid_tempfile'>tempfile</span><span class='period'>.</span><span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_resource_uri'>resource_uri</span><span class='rparen'>)</span>
+      <span class='id identifier rubyid_usage_points'>usage_points</span> <span class='op'>=</span> <span class='id identifier rubyid_parser'>parser</span><span class='period'>.</span><span class='id identifier rubyid_usage_points'>usage_points</span>
+
+      <span class='kw'>if</span> <span class='id identifier rubyid_usage_points'>usage_points</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span> <span class='op'>==</span> <span class='int'>0</span>
+        <span class='comment'># Retrieve and update IntervalBlock&#39;s
+</span>        <span class='id identifier rubyid_parser'>parser</span><span class='period'>.</span><span class='id identifier rubyid_interval_blocks'>interval_blocks</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_interval_block'>interval_block</span><span class='op'>|</span>
+          <span class='id identifier rubyid_interval_block'>interval_block</span><span class='period'>.</span><span class='id identifier rubyid_save'>save</span><span class='lparen'>(</span><span class='rparen'>)</span>
+        <span class='kw'>end</span>
+
+        <span class='comment'># Query from local persistence
+</span>        <span class='id identifier rubyid_usage_points'>usage_points</span> <span class='op'>=</span> <span class='id identifier rubyid_retrieve_data'>retrieve_data</span><span class='lparen'>(</span><span class='id identifier rubyid_resource_uri'>resource_uri</span><span class='comma'>,</span> <span class='id identifier rubyid_interval_start_time'>interval_start_time</span><span class='comma'>,</span> <span class='id identifier rubyid_interval_end_time'>interval_end_time</span><span class='comma'>,</span> <span class='id identifier rubyid_aggregation_type'>aggregation_type</span><span class='rparen'>)</span>
+      <span class='kw'>else</span>
+        <span class='comment'># For each usage point, perform aggregation and save in persistence
+</span>        <span class='id identifier rubyid_usage_points'>usage_points</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_usage_point'>usage_point</span><span class='op'>|</span>
+          <span class='id identifier rubyid_usage_point'>usage_point</span> <span class='op'>=</span> <span class='const'>Aggregator</span><span class='period'>.</span><span class='id identifier rubyid_aggregate'>aggregate</span><span class='lparen'>(</span><span class='id identifier rubyid_usage_point'>usage_point</span><span class='comma'>,</span> <span class='id identifier rubyid_aggregation_type'>aggregation_type</span><span class='rparen'>)</span>
+          <span class='id identifier rubyid_usage_point'>usage_point</span><span class='period'>.</span><span class='id identifier rubyid_meter_readings'>meter_readings</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_meter_reading'>meter_reading</span><span class='op'>|</span>
+            <span class='id identifier rubyid_meter_reading'>meter_reading</span><span class='period'>.</span><span class='id identifier rubyid_interval_blocks'>interval_blocks</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_interval_block'>interval_block</span><span class='op'>|</span>
+              <span class='id identifier rubyid_interval_block'>interval_block</span><span class='period'>.</span><span class='id identifier rubyid_save'>save</span>
+            <span class='kw'>end</span>
+            <span class='id identifier rubyid_meter_reading'>meter_reading</span><span class='period'>.</span><span class='id identifier rubyid_save'>save</span>
+          <span class='kw'>end</span>
+          <span class='id identifier rubyid_usage_point'>usage_point</span><span class='period'>.</span><span class='id identifier rubyid_save'>save</span>
+        <span class='kw'>end</span>
+      <span class='kw'>end</span>
+    <span class='kw'>rescue</span> <span class='const'>DataMapper</span><span class='op'>::</span><span class='const'>SaveFailureError</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_e'>e</span>
+      <span class='comment'># Rollback transaction and raise PersistenceError
+</span>      <span class='const'>LOGGER</span><span class='period'>.</span><span class='id identifier rubyid_fatal'>fatal</span><span class='lparen'>(</span><span class='id identifier rubyid_e'>e</span><span class='period'>.</span><span class='id identifier rubyid_backtrace'>backtrace</span><span class='rparen'>)</span>
+      <span class='id identifier rubyid_txn'>txn</span><span class='period'>.</span><span class='id identifier rubyid_rollback'>rollback</span>
+      <span class='id identifier rubyid_raise'>raise</span> <span class='const'>PVImpactGreenButton</span><span class='op'>::</span><span class='const'>PersistenceError</span><span class='comma'>,</span> <span class='id identifier rubyid_e'>e</span><span class='period'>.</span><span class='id identifier rubyid_resource'>resource</span><span class='period'>.</span><span class='id identifier rubyid_errors'>errors</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
+    <span class='kw'>ensure</span>
+      <span class='comment'># Remove temp file
+</span>      <span class='id identifier rubyid_tempfile'>tempfile</span><span class='period'>.</span><span class='id identifier rubyid_unlink'>unlink</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+  <span class='kw'>return</span> <span class='id identifier rubyid_usage_points'>usage_points</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="retrieve_data-class_method">
+  
+    + (<tt>Object</tt>) <strong>retrieve_data</strong>(subscription_id, interval_start_time = nil, interval_end_time = nil, aggregation_type = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Retrieve customer GreenButton data from database persistence, and apply
+aggregation if needed.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>subscription_id</span>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the subscription ID String</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>interval_start_time</span>
+      
+      
+        <span class='type'></span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the interval start Time, optional</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>interval_end_time</span>
+      
+      
+        <span class='type'></span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the interval end Time, optional</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>aggregation_type</span>
+      
+      
+        <span class='type'></span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the AggregationType, optional</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        
+        <div class='inline'>
+<p>the persisted UsagePoint data</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        
+        <div class='inline'>
+<p>ArgumentError if subscription_id is nil or blank string or does not respond
+to to_s, or interval_start_time/interval_end_time is not Time, or
+interval_start_time is later than interval_end_time, or aggregation_type is
+not AggregationType</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        
+        <div class='inline'>
+<p>PVImpactGreenButton::AggregationError if failed to aggregate the
+GreenButton data</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        
+        <div class='inline'>
+<p>PVImpactGreenButton::PersistenceError if failed to save GreenButton data
+into persistence</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/pvimpact-greenbutton.rb', line 178</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_retrieve_data'>retrieve_data</span><span class='lparen'>(</span><span class='id identifier rubyid_subscription_id'>subscription_id</span><span class='comma'>,</span> <span class='id identifier rubyid_interval_start_time'>interval_start_time</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_interval_end_time'>interval_end_time</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_aggregation_type'>aggregation_type</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_validate_string'>validate_string</span><span class='lparen'>(</span><span class='id identifier rubyid_subscription_id'>subscription_id</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>subscription_id</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_validate_time'>validate_time</span><span class='lparen'>(</span><span class='id identifier rubyid_interval_start_time'>interval_start_time</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>interval_start_time</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='kw'>false</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_validate_time'>validate_time</span><span class='lparen'>(</span><span class='id identifier rubyid_interval_end_time'>interval_end_time</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>interval_end_time</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='kw'>false</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_validate_time_range'>validate_time_range</span><span class='lparen'>(</span><span class='id identifier rubyid_interval_start_time'>interval_start_time</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>interval_start_time</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_interval_end_time'>interval_end_time</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>interval_end_time</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_interval_start_time'>interval_start_time</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_interval_end_time'>interval_end_time</span>
+  <span class='id identifier rubyid_validate_aggregation_type'>validate_aggregation_type</span><span class='lparen'>(</span><span class='id identifier rubyid_aggregation_type'>aggregation_type</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>aggregation_type</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_aggregation_type'>aggregation_type</span>
+
+  <span class='kw'>begin</span>
+    <span class='comment'># Query usage points from persistence
+</span>    <span class='id identifier rubyid_interval_block_filter'>interval_block_filter</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+    <span class='id identifier rubyid_interval_block_filter'>interval_block_filter</span> <span class='op'>=</span> <span class='id identifier rubyid_interval_block_filter'>interval_block_filter</span><span class='period'>.</span><span class='id identifier rubyid_merge'>merge</span><span class='lparen'>(</span><span class='lbrace'>{</span> <span class='symbol'>:start_time</span><span class='period'>.</span><span class='id identifier rubyid_gte'>gte</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_interval_start_time'>interval_start_time</span> <span class='rbrace'>}</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_interval_start_time'>interval_start_time</span>
+    <span class='id identifier rubyid_interval_block_filter'>interval_block_filter</span> <span class='op'>=</span> <span class='id identifier rubyid_interval_block_filter'>interval_block_filter</span><span class='period'>.</span><span class='id identifier rubyid_merge'>merge</span><span class='lparen'>(</span><span class='lbrace'>{</span> <span class='symbol'>:end_time</span><span class='period'>.</span><span class='id identifier rubyid_lte'>lte</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_interval_end_time'>interval_end_time</span> <span class='rbrace'>}</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_interval_end_time'>interval_end_time</span>
+    <span class='id identifier rubyid_usage_points'>usage_points</span> <span class='op'>=</span> <span class='const'>UsagePoint</span><span class='period'>.</span><span class='id identifier rubyid_all'>all</span><span class='lparen'>(</span>
+      <span class='symbol'>:subscription_id</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_subscription_id'>subscription_id</span><span class='comma'>,</span>
+      <span class='symbol'>:meter_readings</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span>
+        <span class='symbol'>:interval_blocks</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_interval_block_filter'>interval_block_filter</span>
+      <span class='rbrace'>}</span>
+    <span class='rparen'>)</span>
+    <span class='comment'># For each usage point, perform aggregation
+</span>    <span class='id identifier rubyid_usage_points'>usage_points</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_usage_point'>usage_point</span><span class='op'>|</span>
+      <span class='const'>Aggregator</span><span class='period'>.</span><span class='id identifier rubyid_aggregate'>aggregate</span><span class='lparen'>(</span><span class='id identifier rubyid_usage_point'>usage_point</span><span class='comma'>,</span> <span class='id identifier rubyid_aggregation_type'>aggregation_type</span><span class='rparen'>)</span>
+
+      <span class='id identifier rubyid_usage_point'>usage_point</span><span class='period'>.</span><span class='id identifier rubyid_meter_readings'>meter_readings</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_meter_reading'>meter_reading</span><span class='op'>|</span>
+        <span class='comment'># Include only IntervalBlock&#39;s within the range
+</span>        <span class='id identifier rubyid_meter_reading'>meter_reading</span><span class='period'>.</span><span class='id identifier rubyid_interval_blocks'>interval_blocks</span> <span class='op'>=</span> <span class='id identifier rubyid_meter_reading'>meter_reading</span><span class='period'>.</span><span class='id identifier rubyid_interval_blocks'>interval_blocks</span><span class='period'>.</span><span class='id identifier rubyid_all'>all</span><span class='lparen'>(</span><span class='id identifier rubyid_interval_block_filter'>interval_block_filter</span><span class='rparen'>)</span>
+      <span class='kw'>end</span>
+    <span class='kw'>end</span>
+
+    <span class='kw'>return</span> <span class='id identifier rubyid_usage_points'>usage_points</span>
+  <span class='kw'>rescue</span> <span class='const'>DataMapper</span><span class='op'>::</span><span class='const'>PersistenceError</span><span class='comma'>,</span> <span class='const'>DataMapper</span><span class='op'>::</span><span class='const'>ObjectNotFoundError</span><span class='comma'>,</span> <span class='const'>DataMapper</span><span class='op'>::</span><span class='const'>UnknownRelationshipError</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_e'>e</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='const'>PVImpactGreenButton</span><span class='op'>::</span><span class='const'>PersistenceError</span><span class='comma'>,</span> <span class='id identifier rubyid_e'>e</span><span class='period'>.</span><span class='id identifier rubyid_message'>message</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="setup_db-class_method">
+  
+    + (<tt>Object</tt>) <strong>setup_db</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Setup database for this gem.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        
+        <div class='inline'>
+<p>PVImpactGreenButton::PersistenceError if failed to setup database</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/pvimpact-greenbutton.rb', line 44</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_setup_db'>setup_db</span>
+  <span class='kw'>begin</span>
+    <span class='const'>DataMapper</span><span class='period'>.</span><span class='id identifier rubyid_setup'>setup</span><span class='lparen'>(</span><span class='symbol'>:default</span><span class='comma'>,</span> <span class='const'>PVImpactGreenButton</span><span class='period'>.</span><span class='id identifier rubyid_configuration'>configuration</span><span class='period'>.</span><span class='id identifier rubyid_db_url'>db_url</span><span class='rparen'>)</span>
+    <span class='const'>DataMapper</span><span class='op'>::</span><span class='const'>Model</span><span class='period'>.</span><span class='id identifier rubyid_raise_on_save_failure'>raise_on_save_failure</span> <span class='op'>=</span> <span class='kw'>true</span>
+    <span class='const'>DataMapper</span><span class='period'>.</span><span class='id identifier rubyid_finalize'>finalize</span>
+  <span class='kw'>rescue</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_e'>e</span>
+    <span class='const'>LOGGER</span><span class='period'>.</span><span class='id identifier rubyid_fatal'>fatal</span><span class='lparen'>(</span><span class='id identifier rubyid_e'>e</span><span class='period'>.</span><span class='id identifier rubyid_backtrace'>backtrace</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='const'>PVImpactGreenButton</span><span class='op'>::</span><span class='const'>PersistenceError</span><span class='comma'>,</span> <span class='id identifier rubyid_e'>e</span><span class='period'>.</span><span class='id identifier rubyid_message'>message</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Tue Apr  7 22:31:28 2015 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.6 (ruby-2.1.5).
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="GreenButtonDataStyleSheet.xslt"?>
+
+<!--
+=========================================================
+=========================================================
+=========================================================
+=========================================================
+=========================================================
+=========================================================
+
+To view this data file in a browser in a more readable tabluar form
+please download the GreenButtonDataStyleSheet.xslt file by copying and
+pasting the following link in your browser and place the file in the same
+directory as this XML file:
+=====|
+http://www.greenbuttondata.org/data/downloading.aspx?file=GreenButtonDataStyleSheet.xslt
+|=====
+
+Please leave this heading comment section in this file.
+
+=========================================================
+=========================================================
+=========================================================
+=========================================================
+=========================================================
+=========================================================
+-->
+<!--
+==========================================================================
+Sample Green Button Data File:  TestGBDataoneMonthBinnedDailyWCost.xml
+Version: 0.7 20130920
+     Author: Ron Pasquarelli, Marty Burns (Hypertek for NIST)
+     Notice: This is draft prototype developed for SGIP by the Administrator Technical Team (EnerNex)
+==========================================================================
+Copyright (c) 2012,2013 EnergyOS.org
+
+Licensed by EnergyOS.org under one or more contributor license agreements.
+
+See the NOTICE file distributed with this work for additional 
+information regarding copyright ownership. The EnergyOS.org licenses this 
+file to you under the Apache License, Version 2.0 (the "; License; "); 
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at:
+http://www.apache.org/licenses/LICENSE-2.0
+  
+Unless required by applicable law or agreed to in writing, software 
+distributed under the License is distributed on an "AS IS" BASIS, 
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or 
+implied.  See the License for the specific language governing 
+permissions and limitations under the License.
+-->
+
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:espi="http://naesb.org/espi"
+      xsi:schemaLocation="http://naesb.org/espi espiDerived.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <id>urn:uuid:E6DA596A-CC3B-4598-A1B3-2F1BE42220F9</id>
+  <title>Green Button Subscription Feed</title>
+  <updated>2014-07-01T10:00:00Z</updated>
+  <link rel="self" href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/RetailCustomer/83e269c1"/>
+  <entry>
+    <id>urn:uuid:D1A987DA-F5AC-468B-9C03-FA7839BCC8F1</id>
+    <link rel="self"
+          href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/RetailCustomer/1/UsagePoint/1"/>
+    <link rel="up"
+          href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/RetailCustomer/1/UsagePoint"/>
+    <link rel="related"
+          href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/RetailCustomer/1/UsagePoint/1/MeterReading"/>
+    <link rel="related"
+          href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/RetailCustomer/1/UsagePoint/1/ElectricPowerUsageSummary"/>
+    <link rel="related"
+          href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/LocalTimeParameters/01"/>
+    <title>Green Button Sample Data File</title>
+    <content>
+      <UsagePoint xmlns="http://naesb.org/espi">
+        <ServiceCategory>
+          <kind>0</kind>
+        </ServiceCategory>
+        <ServiceDeliveryPoint>
+          <name>sample tariff showing block and tier pricing</name>
+          <tariffProfile>./TariffSample.xml</tariffProfile>
+        </ServiceDeliveryPoint>
+      </UsagePoint>
+    </content>
+    <published>2014-07-01T10:00:00Z</published>
+    <updated>2014-07-01T10:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>urn:uuid:65FA6809-6331-450F-8FCE-FC114D3C49CB</id>
+    <link rel="self"
+          href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/LocalTimeParameters/01"/>
+    <link rel="up" href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/LocalTimeParameters"/>
+    <title>DST For North America</title>
+    <content>
+      <LocalTimeParameters xmlns="http://naesb.org/espi">
+        <dstEndRule>B40E2000</dstEndRule>
+        <dstOffset>3600</dstOffset>
+        <dstStartRule>360E2000</dstStartRule>
+        <tzOffset>-18000</tzOffset>
+      </LocalTimeParameters>
+    </content>
+    <published>2014-07-01T10:00:00Z</published>
+    <updated>2014-07-01T10:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>urn:uuid:CAB10706-D217-43D4-B416-6B31B46CD572</id>
+    <link rel="self"
+          href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/RetailCustomer/1/UsagePoint/1/MeterReading/01"/>
+    <link rel="up"
+          href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/RetailCustomer/1/UsagePoint/1/MeterReading"/>
+    <link rel="related"
+          href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/RetailCustomer/1/UsagePoint/1/MeterReading/01/IntervalBlock"/>
+    <link rel="related" href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ReadingType/3"/>
+    <title>Monthly Electricity Consumption</title>
+    <content>
+      <MeterReading xmlns="http://naesb.org/espi"/>
+    </content>
+    <published>2014-07-01T10:00:00Z</published>
+    <updated>2014-07-01T10:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>urn:uuid:93FD8561-8CE0-43EC-907B-22418F648739</id>
+    <link rel="self" href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ReadingType/3"/>
+    <link rel="up" href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/ReadingType"/>
+    <title>Type of Meter Reading Data</title>
+    <content>
+      <ReadingType xmlns="http://naesb.org/espi">
+        <accumulationBehaviour>4</accumulationBehaviour>
+        <commodity>1</commodity>
+        <currency>840</currency>
+        <dataQualifier>12</dataQualifier>
+        <flowDirection>1</flowDirection>
+        <intervalLength>3600</intervalLength>
+        <kind>12</kind>
+        <phase>769</phase>
+        <powerOfTenMultiplier>0</powerOfTenMultiplier>
+        <timeAttribute>0</timeAttribute>
+        <uom>72</uom>
+      </ReadingType>
+    </content>
+    <published>2014-07-01T10:00:00Z</published>
+    <updated>2014-07-01T10:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>urn:uuid:CC77E678-FAC5-4CE3-A777-526BFD564052</id>
+    <link rel="self"
+          href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/RetailCustomer/1/UsagePoint/1/MeterReading/01/IntervalBlock/1"/>
+    <link rel="up"
+          href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/RetailCustomer/1/UsagePoint/1/MeterReading/01/IntervalBlock"/>
+    <title/>
+    <content>
+      <IntervalBlock xmlns="http://naesb.org/espi">
+        <interval>
+          <duration>86400</duration>
+          <start>1401595200</start>
+          <!-- start date: 6/1/2014 4:00:00 AM -->
+        </interval>
+        <IntervalReading>
+          <cost>2585</cost>
+          <timePeriod>
+            <duration>3600</duration>
+            <start>1401595200</start>
+            <!-- 6/1/2014 4:00:00 AM  -->
+          </timePeriod>
+          <value>861</value>
+        </IntervalReading>
+        <IntervalReading>
+          <cost>738</cost>
+          <timePeriod>
+            <duration>3600</duration>
+            <start>1401598800</start>
+            <!-- 6/1/2014 5:00:00 AM  -->
+          </timePeriod>
+          <value>246</value>
+        </IntervalReading>
+        <IntervalReading>
+          <cost>854</cost>
+          <timePeriod>
+            <duration>3600</duration>
+            <start>1401602400</start>
+            <!-- 6/1/2014 6:00:00 AM  -->
+          </timePeriod>
+          <value>284</value>
+        </IntervalReading>
+        <IntervalReading>
+          <cost>845</cost>
+          <timePeriod>
+            <duration>3600</duration>
+            <start>1401606000</start>
+            <!-- 6/1/2014 7:00:00 AM  -->
+          </timePeriod>
+          <value>281</value>
+        </IntervalReading>
+        <IntervalReading>
+          <cost>788</cost>
+          <timePeriod>
+            <duration>3600</duration>
+            <start>1401609600</start>
+            <!-- 6/1/2014 8:00:00 AM  -->
+          </timePeriod>
+          <value>262</value>
+        </IntervalReading>
+        <IntervalReading>
+          <cost>871</cost>
+          <timePeriod>
+            <duration>3600</duration>
+            <start>1401613200</start>
+            <!-- 6/1/2014 9:00:00 AM  -->
+          </timePeriod>
+          <value>290</value>
+        </IntervalReading>
+        <IntervalReading>
+          <cost>2264</cost>
+          <timePeriod>
+            <duration>3600</duration>
+            <start>1401616800</start>
+            <!-- 6/1/2014 10:00:00 AM  -->
+          </timePeriod>
+          <value>754</value>
+        </IntervalReading>
+        <IntervalReading>
+          <cost>7814</cost>
+          <timePeriod>
+            <duration>3600</duration>
+            <start>1401620400</start>
+            <!-- 6/1/2014 11:00:00 AM  -->
+          </timePeriod>
+          <value>1302</value>
+        </IntervalReading>
+        <IntervalReading>
+          <cost>8023</cost>
+          <timePeriod>
+            <duration>3600</duration>
+            <start>1401624000</start>
+            <!-- 6/1/2014 12:00:00 PM  -->
+          </timePeriod>
+          <value>1337</value>
+        </IntervalReading>
+        <IntervalReading>
+          <cost>7562</cost>
+          <timePeriod>
+            <duration>3600</duration>
+            <start>1401627600</start>
+            <!-- 6/1/2014 1:00:00 PM  -->
+          </timePeriod>
+          <value>1260</value>
+        </IntervalReading>
+        <IntervalReading>
+          <cost>8757</cost>
+          <timePeriod>
+            <duration>3600</duration>
+            <start>1401631200</start>
+            <!-- 6/1/2014 2:00:00 PM  -->
+          </timePeriod>
+          <value>1459</value>
+        </IntervalReading>
+        <IntervalReading>
+          <cost>8089</cost>
+          <timePeriod>
+            <duration>3600</duration>
+            <start>1401634800</start>
+            <!-- 6/1/2014 3:00:00 PM  -->
+          </timePeriod>
+          <value>1348</value>
+        </IntervalReading>
+        <IntervalReading>
+          <cost>7377</cost>
+          <timePeriod>
+            <duration>3600</duration>
+            <start>1401638400</start>
+            <!-- 6/1/2014 4:00:00 PM  -->
+          </timePeriod>
+          <value>1229</value>
+        </IntervalReading>
+        <IntervalReading>
+          <cost>7731</cost>
+          <timePeriod>
+            <duration>3600</duration>
+            <start>1401642000</start>
+            <!-- 6/1/2014 5:00:00 PM  -->
+          </timePeriod>
+          <value>1288</value>
+        </IntervalReading>
+        <IntervalReading>
+          <cost>7407</cost>
+          <timePeriod>
+            <duration>3600</duration>
+            <start>1401645600</start>
+            <!-- 6/1/2014 6:00:00 PM  -->
+          </timePeriod>
+          <value>1234</value>
+        </IntervalReading>
+        <IntervalReading>
+          <cost>12782</cost>
+          <timePeriod>
+            <duration>3600</duration>
+            <start>1401649200</start>
+            <!-- 6/1/2014 7:00:00 PM  -->
+          </timePeriod>
+          <value>1420</value>
+        </IntervalReading>
+        <IntervalReading>
+          <cost>15042</cost>
+          <timePeriod>
+            <duration>3600</duration>
+            <start>1401652800</start>
+            <!-- 6/1/2014 8:00:00 PM  -->
+          </timePeriod>
+          <value>1253</value>
+        </IntervalReading>
+        <IntervalReading>
+          <cost>20761</cost>
+          <timePeriod>
+            <duration>3600</duration>
+            <start>1401656400</start>
+            <!-- 6/1/2014 9:00:00 PM  -->
+          </timePeriod>
+          <value>1384</value>
+        </IntervalReading>
+        <IntervalReading>
+          <cost>20005</cost>
+          <timePeriod>
+            <duration>3600</duration>
+            <start>1401660000</start>
+            <!-- 6/1/2014 10:00:00 PM  -->
+          </timePeriod>
+          <value>1333</value>
+        </IntervalReading>
+        <IntervalReading>
+          <cost>20988</cost>
+          <timePeriod>
+            <duration>3600</duration>
+            <start>1401663600</start>
+            <!-- 6/1/2014 11:00:00 PM  -->
+          </timePeriod>
+          <value>1399</value>
+        </IntervalReading>
+        <IntervalReading>
+          <cost>32985</cost>
+          <timePeriod>
+            <duration>3600</duration>
+            <start>1401667200</start>
+            <!-- 6/2/2014  -->
+          </timePeriod>
+          <value>1374</value>
+        </IntervalReading>
+        <IntervalReading>
+          <cost>26329</cost>
+          <timePeriod>
+            <duration>3600</duration>
+            <start>1401670800</start>
+            <!-- 6/2/2014 1:00:00 AM  -->
+          </timePeriod>
+          <value>1462</value>
+        </IntervalReading>
+        <IntervalReading>
+          <cost>17762</cost>
+          <timePeriod>
+            <duration>3600</duration>
+            <start>1401674400</start>
+            <!-- 6/2/2014 2:00:00 AM  -->
+          </timePeriod>
+          <value>1480</value>
+        </IntervalReading>
+        <IntervalReading>
+          <cost>4485</cost>
+          <timePeriod>
+            <duration>3600</duration>
+            <start>1401678000</start>
+            <!-- 6/2/2014 3:00:00 AM  -->
+          </timePeriod>
+          <value>747</value>
+        </IntervalReading>
+      </IntervalBlock>
+    </content>
+    <published>2014-06-02T04:00:00Z</published>
+    <updated>2014-06-02T04:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>urn:uuid:C3870F84-BC36-40BB-A5A5-455A03BBA352</id>
+    <link rel="self"
+          href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/RetailCustomer/1/UsagePoint/1/ElectricPowerUsageSummary/01"/>
+    <link rel="up"
+          href="https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/RetailCustomer/1/UsagePoint/1/ElectricPowerUsageSummary"/>
+    <title>Usage Summary</title>
+    <content>
+      <ElectricPowerUsageSummary xmlns="http://naesb.org/espi">
+        <billingPeriod>
+          <duration>2419200</duration>
+          <start>1404187200</start>
+        </billingPeriod>
+        <billLastPeriod>0</billLastPeriod>
+        <billToDate>0</billToDate>
+        <costAdditionalLastPeriod>0</costAdditionalLastPeriod>
+        <currency>840</currency>
+        <overallConsumptionLastPeriod>
+          <powerOfTenMultiplier>0</powerOfTenMultiplier>
+          <uom>72</uom>
+          <value>0</value>
+        </overallConsumptionLastPeriod>
+        <currentBillingPeriodOverAllConsumption>
+          <powerOfTenMultiplier>0</powerOfTenMultiplier>
+          <timeStamp>1404187200</timeStamp>
+          <uom>72</uom>
+          <value>0</value>
+        </currentBillingPeriodOverAllConsumption>
+        <qualityOfReading>14</qualityOfReading>
+        <statusTimeStamp>1404187200</statusTimeStamp>
+      </ElectricPowerUsageSummary>
+    </content>
+    <published>2014-07-29T04:00:00Z</published>
+    <updated>2014-07-29T04:00:00Z</updated>
+  </entry>
+</feed>

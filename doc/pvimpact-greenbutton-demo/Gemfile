@@ -1,0 +1,12 @@
+source 'https://rubygems.org'
+
+gem 'rails', '3.2.21'
+
+# Install pvimpact-greenbutton gem from local
+gem 'pvimpact-greenbutton', :path => '../pvimpact-greenbutton'
+
+gem 'jquery-rails'
+
+gem 'twitter-bootstrap-rails'
+
+gem 'bootstrap-datepicker-rails'

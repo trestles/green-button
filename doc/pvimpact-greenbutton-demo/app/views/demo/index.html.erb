@@ -1,0 +1,121 @@
+<h1>GreenButton Demo</h1>
+<script>
+    function clearForm() {
+        $('#operation').val('download_data');
+        $('#resource_uri').val("https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Batch/Subscription/5");
+        $('#access_token').val('688b026c-665f-4994-9139-6b21b13fbeee');
+        $('#aggregation_type').val(0);
+        $('#interval_start_time').val("");
+        $('#interval_end_time').val("");
+    }
+
+</script>
+<div>
+  <div>
+    <form role="form" class=".form-horizontal" action="index" method="post">
+      <div class="form-group">
+        <label for="operation">Operation:</label>
+        <select class="form-control" id="operation" name="operation">
+          <option value="download_data" <%= @operation == 'download_data' ? 'selected' : ''%>>Download Data</option>
+          <option value="retrieve_data" <%= @operation == 'retrieve_data' ? 'selected' : ''%>>Retrieve Data</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="resource_uri">Resource URI:</label>
+        <input type="text" class="form-control" id="resource_uri" name="resource_uri" value="<%= @resource_uri || 'https://services.greenbuttondata.org/DataCustodian/espi/1_1/resource/Batch/Subscription/5' %>">
+      </div>
+      <div class="form-group">
+        <label for="access_token">Access Token:</label>
+        <input type="text" class="form-control" id="access_token" name="access_token" value="<%= @access_token || '688b026c-665f-4994-9139-6b21b13fbeee' %>">
+      </div>
+      <div class="form-group">
+        <label for="aggregation_type">Aggregation Type:</label>
+        <select class="form-control" id="aggregation_type" name="aggregation_type">
+          <option value="0" <%= @aggregation_type == '0' ? 'selected' : ''%>>Default</option>
+          <option value="900" <%= @aggregation_type == '900' ? 'selected' : ''%>>15 minutes</option>
+          <option value="3600" <%= @aggregation_type == '3600' ? 'selected' : ''%>>1 hour</option>
+          <option value="86400" <%= @aggregation_type == '86400' ? 'selected' : ''%>>1 day</option>
+          <option value="2678400" <%= @aggregation_type == '2678400' ? 'selected' : ''%>>1 month</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="interval_start_time">Start Date:</label>
+        <input type="text" id="interval_start_time" name="interval_start_time" data-provide='datepicker' value="<%= @interval_start_time %>">
+      </div>
+      <div class="form-group">
+        <label for="interval_end_time">End Date:</label>
+        <input type="text" id="interval_end_time" name="interval_end_time" data-provide='datepicker' value="<%= @interval_end_time %>">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="button" class="btn" onclick="clearForm();">Reset</button>
+
+    </form>
+  </div>
+  <% if @error %>
+  <h2>Error occurred : <%= @error.message %></h2>
+  <% end %>
+  <% if !@error && @usage_points && !@usage_points.empty? %>
+      <h2>GreenData Result</h2>
+
+      <div>
+          <% @usage_points.each do |usage_point| %>
+              <p>
+                <ul>
+                  <li>Service Kind: <%= usage_point.kind %></li>
+                  <li>Subscription ID: <%= usage_point.subscription_id %></li>
+                  <li>
+                    Meter Readings:
+                    <ul>
+                      <% usage_point.meter_readings.each do |meter_reading| %>
+                      <li>
+                        ID: <%= meter_reading.id %>
+                      </li>
+                      <li>
+                        Interval Blocks:
+                        <ul>
+                          <% meter_reading.interval_blocks.each do |interval_block| %>
+                            <li>
+                              ID: <%= interval_block.id %>
+                            </li>
+                            <li>
+                              Interval Readings:
+                              <ul>
+                                <% interval_block.interval_readings.each do |interval_reading| %>
+                                    <li>
+                                      <ul>
+                                        <li>
+                                          ID: <%= interval_reading.id %>
+                                        </li>
+                                        <li>
+                                          Start Time: <%= interval_reading.start_time %>
+                                        </li>
+                                        <li>
+                                          End Time: <%= interval_reading.end_time %>
+                                        </li>
+                                        <li>
+                                          Value: <%= interval_reading.value %>
+                                        </li>
+                                        <li>
+                                          Cost: <%= interval_reading.cost %>
+                                        </li>
+                                      </ul>
+                                    </li>
+
+                                <% end %>
+                              </ul>
+                            </li>
+                          <% end %>
+                        </ul>
+                      </li>
+
+                      <% end %>
+                    </ul>
+                  </li>
+
+                </ul>
+              </p>
+          <% end %>
+      </div>
+  <% end %>
+</div>

@@ -1,0 +1,572 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Module: PVImpactGreenButton::Aggregator
+  
+    &mdash; Documentation by YARD 0.8.7.6
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../';
+  framesUrl = "../frames.html#!PVImpactGreenButton/Aggregator.html";
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../_index.html">Index (A)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../PVImpactGreenButton.html" title="PVImpactGreenButton (module)">PVImpactGreenButton</a></span></span>
+     &raquo; 
+    <span class="title">Aggregator</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Module: PVImpactGreenButton::Aggregator
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+  
+    
+      <dt class="r1">Extended by:</dt>
+      <dd class="r1"><span class='object_link'><a href="Validation.html" title="PVImpactGreenButton::Validation (module)">Validation</a></span></dd>
+      
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/pvimpact/greenbutton/aggregator.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>This module provides method to aggregate interval readings in a UsagePoint
+according to given aggregation type.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#aggregate-class_method" title="aggregate (class method)">+ (Object) <strong>aggregate</strong>(usage_point, aggregation_type = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Aggregates interval readings in a UsagePoint according to given aggregation
+type.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Validation.html" title="PVImpactGreenButton::Validation (module)">Validation</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Validation.html#validate_aggregation_type-instance_method" title="PVImpactGreenButton::Validation#validate_aggregation_type (method)">validate_aggregation_type</a></span>, <span class='object_link'><a href="Validation.html#validate_required-instance_method" title="PVImpactGreenButton::Validation#validate_required (method)">validate_required</a></span>, <span class='object_link'><a href="Validation.html#validate_string-instance_method" title="PVImpactGreenButton::Validation#validate_string (method)">validate_string</a></span>, <span class='object_link'><a href="Validation.html#validate_time-instance_method" title="PVImpactGreenButton::Validation#validate_time (method)">validate_time</a></span>, <span class='object_link'><a href="Validation.html#validate_time_range-instance_method" title="PVImpactGreenButton::Validation#validate_time_range (method)">validate_time_range</a></span></p>
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="aggregate-class_method">
+  
+    + (<tt>Object</tt>) <strong>aggregate</strong>(usage_point, aggregation_type = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Aggregates interval readings in a UsagePoint according to given aggregation
+type.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>usage_point</span>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the UsagePoint to aggregate</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>aggregation_type</span>
+      
+      
+        <span class='type'></span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the AggregationType used to apply aggregation.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        
+        <div class='inline'>
+<p>the aggregated UsagePoint</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        
+        <div class='inline'>
+<p>ArgumentError if usage_point is nil, or aggregation_type is not of type
+AggregationType</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        
+        <div class='inline'>
+<p>PVImpactGreenButton::AggregationError if any error occurred during the
+aggregation process</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/pvimpact/greenbutton/aggregator.rb', line 20</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_aggregate'>aggregate</span><span class='lparen'>(</span><span class='id identifier rubyid_usage_point'>usage_point</span><span class='comma'>,</span> <span class='id identifier rubyid_aggregation_type'>aggregation_type</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_validate_required'>validate_required</span><span class='lparen'>(</span><span class='id identifier rubyid_usage_point'>usage_point</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>usage_point</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_validate_aggregation_type'>validate_aggregation_type</span><span class='lparen'>(</span><span class='id identifier rubyid_aggregation_type'>aggregation_type</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>aggregation_type</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_aggregation_type'>aggregation_type</span>
+
+  <span class='comment'># No further aggregation is required
+</span>  <span class='kw'>return</span> <span class='id identifier rubyid_usage_point'>usage_point</span> <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_aggregation_type'>aggregation_type</span> <span class='op'>||</span> <span class='id identifier rubyid_aggregation_type'>aggregation_type</span> <span class='op'>==</span> <span class='const'>AggregationType</span><span class='op'>::</span><span class='const'>DEFAULT</span>
+
+  <span class='comment'># Iterate through all MeterReading&#39;s of the UsagePoint
+</span>  <span class='id identifier rubyid_usage_point'>usage_point</span><span class='period'>.</span><span class='id identifier rubyid_meter_readings'>meter_readings</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_meter_reading'>meter_reading</span><span class='op'>|</span>
+    <span class='comment'># Raise error if time_attribute isn&#39;t supported
+</span>    <span class='id identifier rubyid_raise'>raise</span> <span class='const'>PVImpactGreenButton</span><span class='op'>::</span><span class='const'>AggregationError</span> <span class='kw'>unless</span> <span class='id identifier rubyid_meter_reading'>meter_reading</span><span class='period'>.</span><span class='id identifier rubyid_meter_reading_type'>meter_reading_type</span><span class='period'>.</span><span class='id identifier rubyid_time_attribute'>time_attribute</span><span class='period'>.</span><span class='id identifier rubyid_between?'>between?</span><span class='lparen'>(</span><span class='int'>0</span><span class='comma'>,</span> <span class='int'>77</span><span class='rparen'>)</span>
+
+    <span class='id identifier rubyid_interval_length'>interval_length</span> <span class='op'>=</span> <span class='id identifier rubyid_meter_reading'>meter_reading</span><span class='period'>.</span><span class='id identifier rubyid_meter_reading_type'>meter_reading_type</span><span class='period'>.</span><span class='id identifier rubyid_aggregation_type'>aggregation_type</span> <span class='op'>==</span> <span class='int'>0</span> <span class='op'>?</span>
+      <span class='id identifier rubyid_meter_reading'>meter_reading</span><span class='period'>.</span><span class='id identifier rubyid_meter_reading_type'>meter_reading_type</span><span class='period'>.</span><span class='id identifier rubyid_interval_length'>interval_length</span> <span class='op'>:</span> <span class='id identifier rubyid_meter_reading'>meter_reading</span><span class='period'>.</span><span class='id identifier rubyid_meter_reading_type'>meter_reading_type</span><span class='period'>.</span><span class='id identifier rubyid_aggregation_type'>aggregation_type</span>
+
+    <span class='comment'># (Validation)Iterate through all IntervalBlock&#39;s of the MeterReading
+</span>    <span class='id identifier rubyid_meter_reading'>meter_reading</span><span class='period'>.</span><span class='id identifier rubyid_interval_blocks'>interval_blocks</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_interval_block'>interval_block</span><span class='op'>|</span>
+      <span class='comment'># Iterate through all IntervalReading&#39;s of the IntervalBlock
+</span>      <span class='id identifier rubyid_interval_block'>interval_block</span><span class='period'>.</span><span class='id identifier rubyid_interval_readings'>interval_readings</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_interval_reading'>interval_reading</span><span class='op'>|</span>
+        <span class='comment'># Validate missing/zero/NaN value/cost and mark as is_missing if needed
+</span>        <span class='id identifier rubyid_interval_reading'>interval_reading</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='kw'>nil</span> <span class='kw'>if</span> <span class='id identifier rubyid_interval_reading'>interval_reading</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span> <span class='op'>==</span> <span class='int'>0</span>
+        <span class='id identifier rubyid_interval_reading'>interval_reading</span><span class='period'>.</span><span class='id identifier rubyid_cost'>cost</span> <span class='op'>=</span> <span class='kw'>nil</span> <span class='kw'>if</span> <span class='id identifier rubyid_interval_reading'>interval_reading</span><span class='period'>.</span><span class='id identifier rubyid_cost'>cost</span> <span class='op'>==</span> <span class='int'>0</span>
+        <span class='id identifier rubyid_interval_reading'>interval_reading</span><span class='period'>.</span><span class='id identifier rubyid_is_missing'>is_missing</span> <span class='op'>=</span> <span class='kw'>true</span> <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_interval_reading'>interval_reading</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span> <span class='op'>||</span> <span class='op'>!</span><span class='id identifier rubyid_interval_reading'>interval_reading</span><span class='period'>.</span><span class='id identifier rubyid_cost'>cost</span>
+      <span class='kw'>end</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Perform aggregation only if current interval length does not match aggregation type
+</span>    <span class='kw'>next</span> <span class='kw'>unless</span> <span class='id identifier rubyid_interval_length'>interval_length</span> <span class='op'>!=</span> <span class='id identifier rubyid_aggregation_type'>aggregation_type</span>
+
+    <span class='id identifier rubyid_meter_reading'>meter_reading</span><span class='period'>.</span><span class='id identifier rubyid_meter_reading_type'>meter_reading_type</span><span class='period'>.</span><span class='id identifier rubyid_aggregation_type'>aggregation_type</span> <span class='op'>=</span> <span class='id identifier rubyid_aggregation_type'>aggregation_type</span>
+
+    <span class='kw'>begin</span>
+      <span class='kw'>if</span> <span class='id identifier rubyid_aggregation_type'>aggregation_type</span> <span class='op'>&lt;</span> <span class='id identifier rubyid_interval_length'>interval_length</span>
+      <span class='comment'># target interval is less than current interval length, divide current interval readings
+</span>      <span class='id identifier rubyid_meter_reading'>meter_reading</span><span class='period'>.</span><span class='id identifier rubyid_interval_blocks'>interval_blocks</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_interval_block'>interval_block</span><span class='op'>|</span>
+        <span class='id identifier rubyid_interval_readings'>interval_readings</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_push'>push</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_interval_block'>interval_block</span><span class='period'>.</span><span class='id identifier rubyid_interval_readings'>interval_readings</span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_interval_block'>interval_block</span><span class='period'>.</span><span class='id identifier rubyid_interval_readings'>interval_readings</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+
+        <span class='id identifier rubyid_interval_readings'>interval_readings</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_interval_reading'>interval_reading</span><span class='op'>|</span>
+          <span class='id identifier rubyid_start_time'>start_time</span> <span class='op'>=</span> <span class='id identifier rubyid_interval_reading'>interval_reading</span><span class='period'>.</span><span class='id identifier rubyid_start_time'>start_time</span>
+          <span class='id identifier rubyid_avg_value'>avg_value</span> <span class='op'>=</span> <span class='id identifier rubyid_interval_reading'>interval_reading</span><span class='period'>.</span><span class='id identifier rubyid_is_missing'>is_missing</span> <span class='op'>?</span> <span class='kw'>nil</span> <span class='op'>:</span> <span class='id identifier rubyid_interval_reading'>interval_reading</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span> <span class='op'>/</span> <span class='id identifier rubyid_interval_length'>interval_length</span>
+          <span class='id identifier rubyid_avg_cost'>avg_cost</span> <span class='op'>=</span> <span class='id identifier rubyid_interval_reading'>interval_reading</span><span class='period'>.</span><span class='id identifier rubyid_is_missing'>is_missing</span> <span class='op'>?</span> <span class='kw'>nil</span> <span class='op'>:</span> <span class='id identifier rubyid_interval_reading'>interval_reading</span><span class='period'>.</span><span class='id identifier rubyid_cost'>cost</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span> <span class='op'>/</span> <span class='id identifier rubyid_interval_length'>interval_length</span>
+          <span class='lparen'>(</span><span class='int'>1</span><span class='op'>..</span><span class='id identifier rubyid_interval_length'>interval_length</span> <span class='op'>/</span> <span class='id identifier rubyid_aggregation_type'>aggregation_type</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span>
+            <span class='comment'># Create new IntervalReading
+</span>            <span class='id identifier rubyid_end_time'>end_time</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id identifier rubyid_start_time'>start_time</span> <span class='op'>+</span> <span class='id identifier rubyid_aggregation_type'>aggregation_type</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_utc'>utc</span>
+            <span class='id identifier rubyid_interval_block'>interval_block</span><span class='period'>.</span><span class='id identifier rubyid_interval_readings'>interval_readings</span> <span class='op'>&lt;&lt;</span> <span class='const'>IntervalReading</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+              <span class='lbrace'>{</span>
+                <span class='symbol'>:aggregation_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_aggregation_type'>aggregation_type</span><span class='comma'>,</span>
+                <span class='symbol'>:cost</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_avg_cost'>avg_cost</span> <span class='op'>==</span> <span class='kw'>nil</span> <span class='op'>?</span> <span class='id identifier rubyid_avg_cost'>avg_cost</span> <span class='op'>:</span> <span class='id identifier rubyid_avg_cost'>avg_cost</span> <span class='op'>*</span> <span class='id identifier rubyid_aggregation_type'>aggregation_type</span><span class='comma'>,</span>
+                <span class='symbol'>:value</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_avg_value'>avg_value</span> <span class='op'>==</span> <span class='kw'>nil</span> <span class='op'>?</span> <span class='id identifier rubyid_avg_value'>avg_value</span> <span class='op'>:</span> <span class='id identifier rubyid_avg_value'>avg_value</span> <span class='op'>*</span> <span class='id identifier rubyid_aggregation_type'>aggregation_type</span><span class='comma'>,</span>
+                <span class='symbol'>:start_time</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_start_time'>start_time</span><span class='comma'>,</span>
+                <span class='symbol'>:end_time</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_end_time'>end_time</span><span class='comma'>,</span>
+                <span class='symbol'>:is_missing</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_interval_reading'>interval_reading</span><span class='period'>.</span><span class='id identifier rubyid_is_missing'>is_missing</span>
+              <span class='rbrace'>}</span>
+            <span class='rparen'>)</span>
+            <span class='id identifier rubyid_start_time'>start_time</span> <span class='op'>=</span> <span class='id identifier rubyid_end_time'>end_time</span>
+          <span class='kw'>end</span>
+
+          <span class='id identifier rubyid_reminder'>reminder</span> <span class='op'>=</span> <span class='id identifier rubyid_interval_length'>interval_length</span> <span class='op'>%</span> <span class='id identifier rubyid_aggregation_type'>aggregation_type</span>
+          <span class='id identifier rubyid_interval_block'>interval_block</span><span class='period'>.</span><span class='id identifier rubyid_interval_readings'>interval_readings</span> <span class='op'>&lt;&lt;</span> <span class='const'>IntervalReading</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+            <span class='lbrace'>{</span>
+              <span class='symbol'>:aggregation_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_aggregation_type'>aggregation_type</span><span class='comma'>,</span>
+              <span class='symbol'>:cost</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_avg_cost'>avg_cost</span> <span class='op'>==</span> <span class='kw'>nil</span> <span class='op'>?</span> <span class='id identifier rubyid_avg_cost'>avg_cost</span> <span class='op'>:</span> <span class='id identifier rubyid_avg_cost'>avg_cost</span> <span class='op'>*</span> <span class='id identifier rubyid_reminder'>reminder</span><span class='comma'>,</span>
+              <span class='symbol'>:value</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_avg_value'>avg_value</span> <span class='op'>==</span> <span class='kw'>nil</span> <span class='op'>?</span> <span class='id identifier rubyid_avg_value'>avg_value</span> <span class='op'>:</span> <span class='id identifier rubyid_avg_value'>avg_value</span> <span class='op'>*</span> <span class='id identifier rubyid_reminder'>reminder</span><span class='comma'>,</span>
+              <span class='symbol'>:start_time</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_start_time'>start_time</span><span class='comma'>,</span>
+              <span class='symbol'>:end_time</span> <span class='op'>=&gt;</span> <span class='lparen'>(</span><span class='id identifier rubyid_start_time'>start_time</span> <span class='op'>+</span> <span class='id identifier rubyid_reminder'>reminder</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_utc'>utc</span><span class='comma'>,</span>
+              <span class='symbol'>:is_missing</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_interval_reading'>interval_reading</span><span class='period'>.</span><span class='id identifier rubyid_is_missing'>is_missing</span>
+            <span class='rbrace'>}</span>
+          <span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_reminder'>reminder</span> <span class='op'>&gt;</span> <span class='int'>0</span>
+        <span class='kw'>end</span>
+      <span class='kw'>end</span>
+
+    <span class='kw'>else</span>
+      <span class='comment'># target interval is greater than current interval length, aggregate current interval readings
+</span>      <span class='id identifier rubyid_meter_reading'>meter_reading</span><span class='period'>.</span><span class='id identifier rubyid_interval_blocks'>interval_blocks</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_interval_block'>interval_block</span><span class='op'>|</span>
+        <span class='id identifier rubyid_start_time'>start_time</span> <span class='op'>=</span> <span class='kw'>nil</span>
+        <span class='id identifier rubyid_total_value'>total_value</span> <span class='op'>=</span> <span class='int'>0</span>
+        <span class='id identifier rubyid_total_cost'>total_cost</span> <span class='op'>=</span> <span class='int'>0</span>
+        <span class='id identifier rubyid_total_duration'>total_duration</span> <span class='op'>=</span> <span class='int'>0</span>
+        <span class='id identifier rubyid_interval_readings'>interval_readings</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_push'>push</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_interval_block'>interval_block</span><span class='period'>.</span><span class='id identifier rubyid_interval_readings'>interval_readings</span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_interval_block'>interval_block</span><span class='period'>.</span><span class='id identifier rubyid_interval_readings'>interval_readings</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+
+        <span class='comment'># Iterate through all IntervalReading&#39;s of the IntervalBlock
+</span>        <span class='id identifier rubyid_interval_readings'>interval_readings</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_interval_reading'>interval_reading</span><span class='op'>|</span>
+          <span class='id identifier rubyid_start_time'>start_time</span> <span class='op'>=</span> <span class='id identifier rubyid_interval_reading'>interval_reading</span><span class='period'>.</span><span class='id identifier rubyid_start_time'>start_time</span> <span class='kw'>unless</span> <span class='id identifier rubyid_start_time'>start_time</span>
+          <span class='comment'># A new IntervalReading should be created
+</span>          <span class='kw'>if</span> <span class='id identifier rubyid_total_duration'>total_duration</span> <span class='op'>+</span> <span class='id identifier rubyid_interval_length'>interval_length</span> <span class='op'>&gt;=</span> <span class='id identifier rubyid_aggregation_type'>aggregation_type</span>
+            <span class='comment'># Accumulate part of the reading
+</span>            <span class='id identifier rubyid_ratio'>ratio</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id identifier rubyid_aggregation_type'>aggregation_type</span> <span class='op'>-</span> <span class='id identifier rubyid_total_duration'>total_duration</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span> <span class='op'>/</span> <span class='id identifier rubyid_interval_length'>interval_length</span>
+            <span class='id identifier rubyid_total_value'>total_value</span> <span class='op'>+=</span> <span class='id identifier rubyid_ratio'>ratio</span> <span class='op'>*</span> <span class='id identifier rubyid_interval_reading'>interval_reading</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span> <span class='kw'>if</span> <span class='id identifier rubyid_interval_reading'>interval_reading</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span>
+            <span class='id identifier rubyid_total_cost'>total_cost</span> <span class='op'>+=</span> <span class='id identifier rubyid_ratio'>ratio</span> <span class='op'>*</span> <span class='id identifier rubyid_interval_reading'>interval_reading</span><span class='period'>.</span><span class='id identifier rubyid_cost'>cost</span> <span class='kw'>if</span> <span class='id identifier rubyid_interval_reading'>interval_reading</span><span class='period'>.</span><span class='id identifier rubyid_cost'>cost</span>
+            <span class='id identifier rubyid_end_time'>end_time</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id identifier rubyid_start_time'>start_time</span> <span class='op'>+</span> <span class='id identifier rubyid_aggregation_type'>aggregation_type</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_utc'>utc</span>
+
+            <span class='comment'># Create new IntervalReading
+</span>            <span class='id identifier rubyid_interval_block'>interval_block</span><span class='period'>.</span><span class='id identifier rubyid_interval_readings'>interval_readings</span> <span class='op'>&lt;&lt;</span> <span class='const'>IntervalReading</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+              <span class='lbrace'>{</span>
+                <span class='symbol'>:aggregation_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_aggregation_type'>aggregation_type</span><span class='comma'>,</span>
+                <span class='symbol'>:cost</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_total_cost'>total_cost</span><span class='comma'>,</span>
+                <span class='symbol'>:value</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_total_value'>total_value</span><span class='comma'>,</span>
+                <span class='symbol'>:start_time</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_start_time'>start_time</span><span class='comma'>,</span>
+                <span class='symbol'>:end_time</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_end_time'>end_time</span>
+              <span class='rbrace'>}</span>
+            <span class='rparen'>)</span>
+
+            <span class='comment'># Reset accumulating variables
+</span>            <span class='id identifier rubyid_total_value'>total_value</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='int'>1</span> <span class='op'>-</span> <span class='id identifier rubyid_ratio'>ratio</span><span class='rparen'>)</span> <span class='op'>*</span> <span class='id identifier rubyid_interval_reading'>interval_reading</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span> <span class='kw'>if</span> <span class='id identifier rubyid_interval_reading'>interval_reading</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span>
+            <span class='id identifier rubyid_total_cost'>total_cost</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='int'>1</span> <span class='op'>-</span> <span class='id identifier rubyid_ratio'>ratio</span><span class='rparen'>)</span> <span class='op'>*</span> <span class='id identifier rubyid_interval_reading'>interval_reading</span><span class='period'>.</span><span class='id identifier rubyid_cost'>cost</span> <span class='kw'>if</span> <span class='id identifier rubyid_interval_reading'>interval_reading</span><span class='period'>.</span><span class='id identifier rubyid_cost'>cost</span>
+            <span class='id identifier rubyid_total_duration'>total_duration</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='int'>1</span> <span class='op'>-</span> <span class='id identifier rubyid_ratio'>ratio</span><span class='rparen'>)</span> <span class='op'>*</span> <span class='id identifier rubyid_interval_length'>interval_length</span>
+            <span class='id identifier rubyid_start_time'>start_time</span> <span class='op'>=</span> <span class='id identifier rubyid_end_time'>end_time</span>
+          <span class='kw'>else</span>
+            <span class='comment'># Continue accumulating
+</span>            <span class='id identifier rubyid_total_value'>total_value</span> <span class='op'>+=</span> <span class='id identifier rubyid_interval_reading'>interval_reading</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span> <span class='kw'>if</span> <span class='id identifier rubyid_interval_reading'>interval_reading</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span>
+            <span class='id identifier rubyid_total_cost'>total_cost</span> <span class='op'>+=</span> <span class='id identifier rubyid_interval_reading'>interval_reading</span><span class='period'>.</span><span class='id identifier rubyid_cost'>cost</span> <span class='kw'>if</span> <span class='id identifier rubyid_interval_reading'>interval_reading</span><span class='period'>.</span><span class='id identifier rubyid_cost'>cost</span>
+            <span class='id identifier rubyid_total_duration'>total_duration</span> <span class='op'>+=</span> <span class='id identifier rubyid_interval_length'>interval_length</span>
+          <span class='kw'>end</span>
+        <span class='kw'>end</span>
+
+        <span class='comment'># We may have still accumulated readings not added
+</span>        <span class='id identifier rubyid_interval_block'>interval_block</span><span class='period'>.</span><span class='id identifier rubyid_interval_readings'>interval_readings</span> <span class='op'>&lt;&lt;</span> <span class='const'>IntervalReading</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+          <span class='lbrace'>{</span>
+            <span class='symbol'>:aggregation_type</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_aggregation_type'>aggregation_type</span><span class='comma'>,</span>
+            <span class='symbol'>:cost</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_total_cost'>total_cost</span><span class='comma'>,</span>
+            <span class='symbol'>:value</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_total_value'>total_value</span><span class='comma'>,</span>
+            <span class='symbol'>:start_time</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_start_time'>start_time</span><span class='comma'>,</span>
+            <span class='symbol'>:end_time</span> <span class='op'>=&gt;</span> <span class='lparen'>(</span><span class='id identifier rubyid_start_time'>start_time</span> <span class='op'>+</span> <span class='id identifier rubyid_total_duration'>total_duration</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_utc'>utc</span>
+          <span class='rbrace'>}</span>
+        <span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_total_duration'>total_duration</span> <span class='op'>&gt;</span> <span class='int'>0</span>
+      <span class='kw'>end</span>
+    <span class='kw'>end</span>
+    <span class='kw'>rescue</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_e'>e</span>
+      <span class='const'>LOGGER</span><span class='period'>.</span><span class='id identifier rubyid_fatal'>fatal</span><span class='lparen'>(</span><span class='id identifier rubyid_e'>e</span><span class='period'>.</span><span class='id identifier rubyid_backtrace'>backtrace</span><span class='rparen'>)</span>
+      <span class='id identifier rubyid_raise'>raise</span> <span class='const'>PVImpactGreenButton</span><span class='op'>::</span><span class='const'>AggregationError</span><span class='comma'>,</span> <span class='id identifier rubyid_e'>e</span><span class='period'>.</span><span class='id identifier rubyid_message'>message</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+  <span class='id identifier rubyid_usage_point'>usage_point</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Tue Apr  7 22:31:28 2015 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.6 (ruby-2.1.5).
+</div>
+
+  </body>
+</html>
